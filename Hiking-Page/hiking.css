@@ -1,3 +1,7 @@
+body {
+  height: 100%;
+}
+
 .hiking-page-dark-background{
   height: 95.5vh;
   width: 50%;
@@ -54,10 +58,11 @@
 }
 #route{
   width: 100%;
-  height: 270em;
+  height: 264em;
   /*border: red solid;*/
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 .border-test{
   /*border: blue solid;*/
@@ -69,7 +74,7 @@
 /*left side of the parallax page*/
 .hiking-page-left-side-parallax{
 width: 50%;
-height: 270em;
+height: 100%;
 background-image:url("http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/pattern-header-strip.png");
 display: flex;
 flex-direction: column;
@@ -78,17 +83,21 @@ align-items: flex-end;
 .hiking-page-blank-space-filler{
   height: 180px;
 }
+
+/*row 1*/
 .hiking-page-orange-square{
-  height: 510px;
+  height: 1000px;
   width: 260px;
   border: #DBA973 solid 10px;
   margin-right: 220px;
+  top: 500px;
   position: relative;
   z-index: 1;
 }
 #hiking-page-flask-1L-positioning{
-  margin-top: -420px;
+  top: -100px;
   margin-right: -35px;
+  position: relative;
 }
 .hiking-page-flask-1L-iso-thermal-and-buy-container{
   height: 300px;
@@ -99,6 +108,8 @@ align-items: flex-end;
   font-family: 'Exo 2', sans-serif;
   font-weight: 400;
 }
+
+/*code for the buy tags*/
 .hiking-page-p-tag-isothermal-container{
   font-size: 23px;
   line-height: 1.2;
@@ -144,27 +155,37 @@ align-items: flex-end;
   color: #e9a065;
   font-size: 18px;
 }
+
+/*row 1*/
 .hiking-page-tin-flask{
-  height: 450px;
+  height: 1100px;
   width: 280px;
   /*border: red solid 1px;*/
   position: relative;
   z-index: 2;
   margin-right: 200px;
-  margin-top: -322px;
+  top: 400px;
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/*row 2*/
 .hiking-page-pic-of-hiking-shoes-for-sale{
-  height: 480px;
+  height: 880px;
   width: 650px;
   /*border: green solid 1px;*/
   margin-right: -150px;
-  margin-top: 250px;
+  top: -100px;
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
+
+/*row 3*/
 .hiking-page-camp-big-container{
   height: 150px;
   width: 500px;
@@ -174,34 +195,44 @@ align-items: flex-end;
   font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: flex-end;
-  margin-top: 150px;
+  top: 950px;
   padding-right: 20px;
+  position: relative;
+  z-index: 10;
 }
+
+/*row 4*/
 .hinking-page-orange-background-bar{
-  height: 130px;
+  height: 250px;
   width: 350px;
   /*border: red solid 1px;*/
   background: #DBA973;
-  margin-top: 290px;
+  top: 500px;
   margin-right: -160px;
+  z-index: 2;
+  position: relative;
 }
 .hiking-page-pullover-jacket-pic-container{
-  height: 500px;
-  width: 400px;
+  height: 1150px;
+  width: 420px;
   /*border: green solid 1px;*/
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-5.png");
   background-position: center;
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
-  margin-top: -230px;
+  top: 650px;
   margin-right: -190px;
+  z-index: 3;
+  position: relative;
 }
 #hiking-page-pullover-arpenaz-positioning{
   margin-right: 220px;
-  margin-top: -400px;
+  top: 250px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 5;
+  position: relative;
   /*border: red solid;*/
 }
 #hiking-page-p-tag-pullover{
@@ -209,30 +240,36 @@ align-items: flex-end;
   display: flex;
   align-items: flex-end;
 }
+
+/*row 5*/
 #hiking-page-Tshirt-Arpenaz-positioning{
-  margin-top: 400px;
+  top: 390px;
+  z-index: 5;
+  position: relative;
 }
+
+/*row 6*/
 .hiking-page-orange-square-background-tent{
-  height: 240px;
-  width: 350px;
+  height: 640px;
+  width: 400px;
   border: #DBA973 solid 10px;
   position: relative;
   z-index: 1;
   margin-right: 80px;
-  margin-top: 100px;
+  top: 600px;
 }
 .hiking-page-tent-picture{
-  height: 400px;
-  width: 750px;
+  height: 893px;
+  width: 780px;
   /*border: black solid 2px;*/
   margin-right: -180px;
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-7.png");
   background-position: center;
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   z-index: 2;
   position: relative;
-  margin-top: -200px;
+  top: 900px;
 }
 .hiking-page-tent-picture-description{
 height: 130px;
@@ -247,99 +284,140 @@ font-family: 'Exo 2', sans-serif;
 font-size: 12px;
 line-height: 1.8;
 opacity: .6;
+position: relative;
+top: 920px;
 }
+
+/*row 7*/
 #hiking-page-light-100-positioning{
-  margin-top: 220px;
+  top: 120px;
+  position: relative;
 }
+
+/*row 8*/
 .hiking-page-hammock-pic-container{
-height: 500px;
+height: 1155px;
 width: 300px;
 /*border: red solid 1px;*/
 background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-10.jpg");
 background-repeat: no-repeat;
-margin-top: 150px;
+top: 1400px;
 margin-right: 60px;
 position: relative;
 z-index: 1;
 }
 .hiking-page-backpack-pic-container{
-  height: 350px;
+  height: 1050px;
   width: 250px;
   /*border: red solid 1px;*/
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-12.jpg");
   background-repeat: no-repeat;
-  margin-top: -100px;
-  margin-right: -60px;
+  top: 650px;
+  margin-right: -130px;
   position: relative;
   z-index: 2;
 }
 #hiking-page-backpack-positioning{
   margin-right: 200px;
-  margin-top: -95px;
+  top: 685px;
+  position: relative;
 }
+
+/*row 9*/
 .hiking-page-second-hammock-pic-container{
   width: 650px;
-  height: 400px;
+  height: 1200px;
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-13.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: -250px;
+  position: relative;
+  top: 2360px;
 }
 
 
 /*start of right side parallax*/
 .hiking-page-right-side-parallax{
   width: 50%;
-  height: 270em;
+  height: 264em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
+/*row 1*/
 .hiking-page-backpack-sleeping-bag-pic-container{
   width: 250px;
-  height: 350px;
+  height: 340px;
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-2.jpg");
   margin-left: 150px;
+  top: 550px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
+
+/*row 2*/
 #hiking-page-shoes-positioning{
   margin-left: 200px;
-  margin-top: 150px;
+  top: 980px;
   color: black;
+  position: relative;
 }
+
+/*row 3*/
 .hiking-page-vest-guitar-pic-container{
   width: 240px;
   height: 350px;
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-4.jpg");
-  margin-left: 300px;
-  margin-top: 120px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 340px;
+  top: 270px;
+  position: relative;
+  z-index: 3;
 }
 .hiking-page-vest-guitar-pic-description{
   height: 90px;
   width: 180px;
   /*border: red solid;*/
-  margin-left: 330px;
-  margin-top: 20px;
+  margin-left: 370px;
+  top: 360px;
   font-family: 'Exo 2', sans-serif;
   opacity: .6;
   line-height: 1.3;
+  position: relative;
 }
 #hiking-page-ing-big-container{
-  margin-top: -350px;
+  top: 1480px;
   margin-left: -200px;
   opacity: .2;
+  z-index: 11;
+  position: relative;
 }
+
+/*row 5*/
 .hiking-page-washing-hands-pic-container{
   width: 400px;
   height: 280px;
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-6.jpg");
-  margin-top:600px;
+  background-position: center;
+  background-size: cover;
+  top:600px;
   margin-left: 50px;
+  position: relative;
 }
+
+/*row 6*/
 #hiking-page-tent-positioning{
   color: black;
-  margin-top: 100px;
-  margin-left: 80px;
+  margin-top: 0px;
+  margin-left: 180px;
+  position: relative;
+  top: 1300px;
 }
+
+/*row 7*/
 .hiking-page-light-pic-with-guitar-container{
   height: 331px;
   width: 228px;
@@ -347,7 +425,7 @@ z-index: 1;
   z-index: 1;
   position: relative;
   margin-left: 228px;
-  margin-top: 25px;
+  top: 380px;
 }
 .hiking-page-light-pic-with-tent-container{
   height: 413px;
@@ -356,26 +434,34 @@ z-index: 1;
   z-index: 2;
   position: relative;
   margin-left: 34px;
-  margin-top: -216px;
+  top: 20px;
 }
+
+/*row 8*/
 #hiking-page-pullover-positioning{
   color: black;
-  margin-top: 160px;
+  top: 1380px;
   margin-left: 20px;
+  position: relative;
+  z-index: 50;
 }
 .hiking-page-close-line-pic-container{
   width: 243px;
   height: 366px;
   background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-11.jpg");
-  margin-top: -209px;
-  margin-left: 200px;
+  top: -50px;
+  margin-left: 300px;
+  position: relative;
 }
-.hiking-page-bottom-area-spacer{
+/*.hiking-page-bottom-area-spacer{
   height: 80px;
-}
+}*/
+
+/*row 9*/
 #hiking-page-hammock-positioning{
   color: black;
   margin-left: 314px;
-  margin-top: 100px;
+  top: 2050px;
   height: 150px;
+  position: relative;
 }

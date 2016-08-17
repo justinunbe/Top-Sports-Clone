@@ -120,6 +120,8 @@ left: 95vw;
 top: 20px;
 background: orange;
 z-index: 10;
+opacity: .4;
+border-radius: 10%;
 }
 
 /*container for the 5 different links to other sports pages*/
