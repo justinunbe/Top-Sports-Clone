@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Top-Sports</title>
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" href="Home-Page/reset.css" />
+    <link rel="stylesheet" href="Home-Page/home.css" />
+    <link rel="stylesheet" href="Hiking-Page/hiking.css" />
+    <link rel="stylesheet" href="Shopping-page/shopping.css" />
+    <link rel="stylesheet" href="Camping-Page/camping.css" />
+    <link rel="stylesheet" href="BackPacking-Page/backpacking.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body ng-controller ="mainCtrl">
+    <a ui-sref="home">
+    <!--holds the ham menu & will be forced in top left or top right  -->
+    <div class="home-page-ham-menu">
+      <i id="home-page-hame-menu-icon"class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    </a>
+    <a ui-sref="shopping">
+      <i id="home-page-shopping-cart-icon"class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </a>
+    <!-- <a href="/#/#route">route</a> -->
+<section ui-view>
+
+  </section>
+  <!-- <div id="route"></div> -->
+
+  <!--start of scripts area-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
+  <script src="https://use.fontawesome.com/4b2a38be8f.js"></script>
+  <script src="app.js"></script>
+  <script src="Home-Page/link-hover-jquery-directive.js"></script>
+  <script src="Hiking-Page/parallax-directive.js"></script>
+  <script src="Hiking-Page/route-directive.js"></script>
+  <script src="BackPacking-Page/carousel-directive.js"></script>
+  <script src="Backpacking-Page/small-pic-directive.js"></script>
+  <script src="Shopping-page/shoppingController.js"></script>
+  <script src="mainService.js"></script>
+  <script src="mainCtrl.js"></script>
+  </body>
+</html>

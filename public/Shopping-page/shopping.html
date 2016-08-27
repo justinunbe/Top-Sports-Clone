@@ -1,0 +1,105 @@
+<div class="shopping-page-all-imcompassing-div">
+
+
+
+<!--side bar menu  -->
+<div class="home-page-side-bar-menu">
+
+  <!--Brand name of the website -->
+  <div class="home-page-brand-name-and-symbol">
+    <!--div for the brand name icon  -->
+    <div class="home-page-brand-name-icon-container">
+      <!-- <i class="fa fa-paper-plane" aria-hidden="true"></i> -->
+    </div>
+    <p class="home-page-brand-name-title">Quenchua</p>
+  </div>
+
+  <!-- holds the different links (twitter, intagram, pintrest, google plus)  -->
+  <div class="home-page-social-media-links-container">
+    <div class="home-page-social-media-link">
+      <i class="fa fa-facebook" id="home-page-font-awesome-manipulation"aria-hidden="true"></i>
+    </div>
+    <div class="home-page-social-media-link">
+      <i class="fa fa-twitter" id="home-page-font-awesome-manipulation" aria-hidden="true"></i>
+    </div>
+    <div class="home-page-social-media-link">
+      <i class="fa fa-pinterest-p" id="home-page-font-awesome-manipulation"aria-hidden="true"></i>
+    </div>
+    <div class="home-page-social-media-link">
+      <i class="fa fa-instagram" id="home-page-font-awesome-manipulation"aria-hidden="true"></i>
+    </div>
+    <div class="home-page-social-media-link">
+      <i class="fa fa-linkedin" id="home-page-font-awesome-manipulation" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+<!--End of side bar code  -->
+
+<div class="shopping-page-rest-of-page-div-except-side-bar">
+<div class="shopping-page-title-bar-text">
+  SHOPPING CART
+</div>
+<div class="shopping-page-cart-items-container">
+  <div class="shopping-page-left-side-decoration">
+    <div class="shopping-page-left-side-small-decoration">
+      <div class="shopping-page-left-side-smallest-decoration">
+
+      </div>
+    </div>
+  </div>
+  <div ng-repeat = "product in allCartProducts" class="shopping-page-individual-cart-item-container">
+    <div class="shopping-page-cart-img-container">
+      <img class="shopping-page-cart-img"src="{{product.img}}" alt="" />
+    </div>
+    <div class="shopping-page-cart-name-container">
+      {{product.name}}
+    </div>
+    <div class="shopping-page-cart-description-container">
+      {{product.description}}
+    </div>
+    <div class="shopping-page-cart-price-container">
+      {{product.price | currency:"$"}}
+    </div>
+    <div ng-click="deleteFromCart(product.id)" class="shopping-page-cart-delete-container">
+      <i id="shopping-page-cancel-icon" class="fa fa-trash-o" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="shopping-page-right-side-decoration">
+    <div class="shopping-page-right-side-small-decoration">
+      <div class="shopping-page-right-side-smallest-decoration">
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="shopping-page-pricing-container">
+<div class="shopping-page-subtotal-container">
+  <div class="shopping-page-subtotal-text">
+    Subtotal:
+  </div>
+  <div class="shopping-page-subtotal-number">
+    ${{productPriceTotal}}
+  </div>
+</div>
+<div class="shopping-page-taxes-container">
+  <div class="shopping-page-taxes-text">
+    Taxes:
+  </div>
+  <div class="shopping-page-taxes-number">
+    ${{taxPrice}}
+  </div>
+</div>
+<div class="shopping-page-total-container">
+  <div class="shopping-page-total-text">
+    Total:
+  </div>
+  <div class="shopping-page-total-number">
+    ${{productFinalTotal}}
+  </div>
+</div>
+</div>
+
+<!--end of page except side bar  -->
+</div>
+<!-- end of page div -->
+</div>

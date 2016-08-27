@@ -1,0 +1,227 @@
+
+
+.temp-circle{
+  background: black;
+  height: 750px;
+  width: 750px;
+  border-radius: 392px;
+  margin-left: 189px;
+  margin-top: -605px;
+  position: fixed;
+  z-index: -10;
+}
+.backpacking-page-full-page-background{
+  width: 100%;
+  height: 100vh;
+  background: blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.backpacking-page-small-pic-container{
+  height: 350px;
+  width: 300px;
+  /*border: red solid;*/
+  background: green;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  right: -159px;
+  /* z-index: -20; */
+  bottom: 354px;
+  }
+/*start background view pages*/
+.backpacking-page-full-page-background-one{
+  width: 100%;
+  height: 100vh;
+  background: blue;
+}
+.backpacking-page-full-page-background-two{
+  width: 100%;
+  height: 100vh;
+  background: green;
+}
+.backpacking-page-full-page-background-three{
+  width: 100%;
+  height: 100vh;
+  background: red;
+}
+.backpacking-page-full-page-background-four{
+  width: 100%;
+  height: 100vh;
+  background: orange;
+}
+.backpacking-page-full-page-background-five{
+  width: 100%;
+  height: 100vh;
+  background: purple;
+}
+.backpacking-page-full-page-background-six{
+  width: 100%;
+  height: 100vh;
+  background: gray;
+}
+.backpacking-page-full-page-background-seven{
+  width: 100%;
+  height: 100vh;
+  background: salmon;
+}
+.backpacking-page-full-page-background-eight{
+  width: 100%;
+  height: 100vh;
+  background: violet;
+}
+.backpacking-page-full-page-background-nine{
+  width: 100%;
+  height: 100vh;
+  background: skyblue;
+}
+/*end background view pages*/
+
+
+.backpacking-page-bottom-dot-place-holder-container{
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+.backpacking-page-bottom-dot-place-holder{
+  height: 650px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  /*border: red solid;*/
+  position: relative;
+  z-index: 10;
+}
+/*dots css*/
+#backpacking-page-dot-route-one{
+  background: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
+  left: -117px;
+  position: relative;
+}
+
+#backpacking-page-dot-route-two{
+  background: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
+  position: relative;
+  left: -221px;
+  bottom: 173px;
+}
+
+#backpacking-page-dot-route-three{
+  background: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
+  position: relative;
+  left: -243px;
+  bottom: 352px;
+}
+
+#backpacking-page-dot-route-four{
+  background: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
+  position: relative;
+  left: -180px;
+  bottom: 497px;
+}
+
+#backpacking-page-dot-route-five{
+  background: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
+  position: relative;
+  left: -42px;
+  bottom: 575px;
+}
+
+#backpacking-page-dot-route-six{
+  background: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
+  position: relative;
+  left: 103px;
+  bottom: 547px;
+}
+
+#backpacking-page-dot-route-seven{
+  background: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
+  position: relative;
+  bottom: 432px;
+  left: 198px;
+}
+
+#backpacking-page-dot-route-eight{
+  background: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
+  position: relative;
+  bottom: 258px;
+  left: 218px;
+}
+
+#backpacking-page-dot-route-nine{
+  background: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
+  position: relative;
+  left: 152px;
+  bottom: 73px;
+}
+/*end dots css*/
+
+/*start arrow css*/
+.backpacking-page-left-arrow-container{
+  height: 40px;
+  width: 40px;
+  /*border: solid blue;*/
+  position: relative;
+      bottom: 350px;
+      right: 400px;
+}
+.backpacking-page-right-arrow-container{
+  height: 40px;
+  width: 40px;
+  /*border: blue solid;*/
+  position: relative;
+      bottom: 350px;
+      right: 140px;
+}
+#backpacking-page-left-arrow{
+font-size: 120px;
+}
+#backpacking-page-right-arrow{
+font-size: 120px;
+}
+/*end arrow css*/
+
+.learn-more-container{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 30px;
+  height: 40px;
+  width: 180px;
+  /*border: red solid;*/
+  position: relative;
+    right: 394px;
+    bottom: 303px;
+}

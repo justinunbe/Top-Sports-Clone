@@ -1,0 +1,269 @@
+[ng-click] {
+  cursor: pointer;
+}
+
+.shopping-page-all-imcompassing-div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.shopping-page-rest-of-page-div-except-side-bar{
+  width: inherit;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 76px;
+  background: #F8F8F8;
+}
+.shopping-page-title-bar-text{
+  height: 210px;
+  width: 70%;
+  /*border: blue solid;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  font-family: 'Exo 2', sans-serif;
+}
+.shopping-page-left-side-decoration{
+  height: 560px;
+  width: 250px;
+  /*border: red solid;*/
+  position: absolute;
+  left:85px;
+  margin-top: 15px;
+  background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/pattern-header-strip.png");
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 0;
+  opacity: .9;
+}
+.shopping-page-left-side-small-decoration{
+  height: 440px;
+  width: 307px;
+  /*border: green solid;*/
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 125px;
+  margin-top: -105px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-4/scene-4-10.jpg");
+}
+.shopping-page-left-side-smallest-decoration{
+  height: 50px;
+  width: 100px;
+  /*border: orange solid;*/
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -30px;
+  /*background: #D8A772;*/
+}
+.shopping-page-right-side-decoration{
+  height: 520px;
+  width: 250px;
+  /*border: red solid;*/
+  position: absolute;
+  right: 62px;
+  margin-top: 80px;
+  background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/pattern-header-strip.png");
+  opacity: .9;
+}
+.shopping-page-right-side-small-decoration{
+  height: 366px;
+  width: 243px;
+  /*border: green solid;*/
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -90px;
+  margin-top: 140px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-2/scene-2-11.jpg");
+}
+
+.shopping-page-right-side-smallest-decoration{
+  height: 50px;
+  width: 100px;
+  /*border: orange solid;*/
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 30px;
+  /*background: #D8A772;*/
+}
+.shopping-page-cart-items-container{
+  width: 100%;
+  height: 350px;
+  /*border: blue solid;*/
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F8F8F8;
+}
+.shopping-page-individual-cart-item-container{
+  height: 325px;
+  width: 210px;
+  border : solid .5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  /*box-shadow:2px 1px 1px #888888;*/
+  margin-right: 14px;
+}
+
+/*individual items in the cart*/
+.shopping-page-cart-img-container{
+  height: 225px;
+  width: 180px;
+  border-bottom:solid 1px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopping-page-cart-img{
+  height: 160px;
+  width: 100%;
+}
+.shopping-page-cart-name-container{
+  height: 40px;
+  width: 100%;
+  /*border: red solid;*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.shopping-page-cart-description-container{
+  height: 30px;
+  width: 100%;
+  /*border: red solid;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: .3;
+}
+.shopping-page-cart-price-container{
+  height: 40px;
+  width: 100%;
+  /*border: red solid;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+.shopping-page-cart-delete-container{
+  height: 30px;
+  width: 30px;
+  /*border : solid .5px rgba(0,0,0,0.1);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+#shopping-page-cancel-icon{
+opacity: .2;
+font-size: 22px;
+}
+.shopping-page-pricing-container{
+  width: 550px;
+  height: 200px;
+  border : solid .5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.shopping-page-subtotal-container{
+  height: 65px;
+  width: 90%;
+  border-bottom: solid .5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-page-subtotal-text{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: .6;
+  /*border: blue solid;*/
+  display: flex;
+  align-items: center;
+}
+.shopping-page-subtotal-number{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  opacity: .5;
+  /*border: blue solid;*/
+  display: flex;
+  align-items: center;
+}
+.shopping-page-taxes-container{
+  height: 65px;
+  width: 90%;
+  border-bottom: solid .5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-page-taxes-text{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: .6;
+  /*border: blue solid;*/
+  display: flex;
+  align-items: center;
+}
+.shopping-page-taxes-number{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  opacity: .5;
+  /*border: blue solid;*/
+  display: flex;
+  align-items: center;
+}
+.shopping-page-total-container{
+  height: 65px;
+  width: 90%;
+  /*border: green solid;*/
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-page-total-text{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  /*border: blue solid;*/
+  display: flex;
+  align-items: center;
+}
+.shopping-page-total-number{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  /*opacity: .8;*/
+  /*border: blue solid;*/
+  display: flex;
+  align-items: center;
+}
