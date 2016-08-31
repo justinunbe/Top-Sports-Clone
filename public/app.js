@@ -14,6 +14,10 @@ $stateProvider
   url:'/Camping',
   templateUrl: 'Camping-Page/camping.html',
 })
+.state('Upcoming', {
+  url:'/Upcoming',
+  templateUrl: 'Upcoming-Page/coming.html',
+})
 .state('shopping', {
   url:'/Shopping',
   templateUrl: 'Shopping-page/shopping.html',

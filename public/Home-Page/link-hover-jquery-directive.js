@@ -16,30 +16,41 @@ return {
     $(document).ready(function(){
 
       //start jquery code
-      $(".home-page-individual-link-container").hover(function() {
+      $(".home-page-individual-link-container").mouseenter(function() {
+
         for(var i = 0; i<hoverArray.length; i++){
             if($(this).attr("id") === hoverArray[i].id){
                   $(".home-page-main-content-container").css('background-image', hoverArray[i].background);
               currentIndex = i;
-              break;
                 }
           }
-}); //end of hover function
+          // $(this).mouseleave(function(){
+          //     $(".home-page-main-content-container").css('background-image', homeBackground);
+          // });
+}); //end of mouse enter function
 
-$(".home-page-main-content-container").hover(function() {
-$(".home-page-main-content-container").css('background-image', homeBackground);
-}); //end of hover function
+$(".home-page-individual-link-container").mouseenter(function() {
+  for(var i = 0; i<hoverArray.length; i++){
+      if($(this).attr("id") === hoverArray[i].id){
+            $(this).css('color', '#D8A772');
+        currentIndex = i;
+          }
+    }
+    $(this).mouseleave(function(){
+      $(this).css('color', 'white');
+     });
+}); //end of mouse enter function
 
-// $(".home-page-individual-link-container").hover(function() {
-//     $(".home-page-main-content-container").css('background-image', homeBackground);
-// }
-// })
+$(".home-page-individual-link-container").mouseenter(function() {
+  for(var i = 0; i<hoverArray.length; i++){
+      if($(this).attr("id") === hoverArray[i].id){
+            $(".home-page-spring-summer-2016-container").fadeOut(400);
+          }
+    }
+
+}); //end of mouse enter function
 
   }); //document .ready
 } // link end
 }; //return
 });//end of directive
-
-
-//write an if statement that makes the different pictures turn on at different times use
-//.has class to do the checking in the if statement.

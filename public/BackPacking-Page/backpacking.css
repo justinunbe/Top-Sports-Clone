@@ -1,71 +1,107 @@
 
 
-.temp-circle{
-  background: black;
-  height: 750px;
-  width: 750px;
-  border-radius: 392px;
-  margin-left: 189px;
-  margin-top: -605px;
-  position: fixed;
-  z-index: -10;
+.temp-circle {
+    /*border: red solid;*/
+    height: 750px;
+    width: 750px;
+    border-radius: 496px;
+    margin-left: 163px;
+    margin-top: -717px;
+    position: absolute;
+    z-index: 10;
 }
 .backpacking-page-full-page-background{
   width: 100%;
   height: 100vh;
-  background: blue;
+  background: #20274D;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /*border: blue solid;*/
+  transition: .4s ease-in-out;
+  /*transform: scale(1);*/
 }
 .backpacking-page-small-pic-container{
-  height: 350px;
-  width: 300px;
-  /*border: red solid;*/
-  background: green;
+  height: 550px;
+  width: 600px;
+  /*border: green solid;*/
+  /*background: green;*/
+  background-image: url(http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-1/scene-1-2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   position: relative;
-  right: -159px;
+  right: -1150px;
   /* z-index: -20; */
-  bottom: 354px;
+  bottom: 664px;
+  transition: .6s ease-in-out;
+  }
+  .outer-text-container{
+    height: 500px;
+    width: 400px;
+
+    /*border: pink solid;*/
+    bottom: 1020px;
+    left: 359px;
+    position: relative;
+  }
+  .inner-text-container{
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    opacity: .2;
+    font-size: 220px;
+  }
+  .backpacking-page-text-container{
+    height: 200px;
+    width: 850px;
+    font-size: 82px;
+    /*border: red solid;*/
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: black;
+    opacity: 1;
+    margin-top: -360px;
+    margin-left: -220px;
+    display: flex;
+    justify-content: center;
   }
 /*start background view pages*/
 .backpacking-page-full-page-background-one{
   width: 100%;
   height: 100vh;
   background: blue;
+  /*border: green solid;*/
 }
 .backpacking-page-full-page-background-two{
   width: 100%;
   height: 100vh;
-  background: green;
+  /*background: green;*/
 }
 .backpacking-page-full-page-background-three{
   width: 100%;
   height: 100vh;
-  background: red;
+  /*background: red;*/
 }
 .backpacking-page-full-page-background-four{
   width: 100%;
   height: 100vh;
-  background: orange;
+  /*background: orange;*/
 }
 .backpacking-page-full-page-background-five{
   width: 100%;
   height: 100vh;
-  background: purple;
+  /*background: purple;*/
 }
 .backpacking-page-full-page-background-six{
   width: 100%;
   height: 100vh;
-  background: gray;
+  /*background: gray;*/
 }
 .backpacking-page-full-page-background-seven{
   width: 100%;
   height: 100vh;
-  background: salmon;
+  /*background: salmon;*/
 }
 .backpacking-page-full-page-background-eight{
   width: 100%;
@@ -85,7 +121,8 @@ height: 100vh;
 width: 100%;
 display: flex;
 justify-content: center;
-align-items: flex-end;
+align-items: center;
+/*border: green solid;*/
 }
 
 .backpacking-page-bottom-dot-place-holder{
@@ -101,92 +138,102 @@ align-items: flex-end;
 }
 /*dots css*/
 #backpacking-page-dot-route-one{
-  background: yellow;
-  height: 50px;
-  width: 50px;
-  border-radius: 200px;
-  left: -117px;
-  position: relative;
+  background: black;
+height: 3px;
+width: 23px;
+border-radius: 200px;
+left: 249px;
+top: 60px;
+position: relative;
+transform: rotate(-128deg);
 }
 
 #backpacking-page-dot-route-two{
-  background: yellow;
-  height: 50px;
-  width: 50px;
-  border-radius: 200px;
-  position: relative;
-  left: -221px;
-  bottom: 173px;
+  background: black;
+height: 3px;
+width: 23px;
+border-radius: 200px;
+position: relative;
+left: -413px;
+bottom: 278px;
+transform: rotate(7deg);
 }
 
 #backpacking-page-dot-route-three{
-  background: yellow;
-  height: 50px;
-  width: 50px;
+  background: black;
+  height: 3px;
+  width: 23px;
   border-radius: 200px;
   position: relative;
-  left: -243px;
-  bottom: 352px;
+  left: -371px;
+  bottom: 446px;
+  transform: rotate(32deg);
 }
 
 #backpacking-page-dot-route-four{
-  background: yellow;
-  height: 50px;
-  width: 50px;
+  background: black;
+  height: 3px;
+  width: 23px;
   border-radius: 200px;
   position: relative;
-  left: -180px;
-  bottom: 497px;
+  left: -246px;
+  bottom: 573px;
+  transform: rotate(54deg);
 }
 
 #backpacking-page-dot-route-five{
-  background: yellow;
-  height: 50px;
-  width: 50px;
-  border-radius: 200px;
-  position: relative;
-  left: -42px;
-  bottom: 575px;
+  background: black;
+    height: 3px;
+    width: 23px;
+    border-radius: 200px;
+    position: relative;
+    left: -83px;
+    bottom: 613px;
+    transform: rotate(-87deg);
 }
 
 #backpacking-page-dot-route-six{
-  background: yellow;
-  height: 50px;
-  width: 50px;
-  border-radius: 200px;
-  position: relative;
-  left: 103px;
-  bottom: 547px;
+  background: black;
+height: 3px;
+width: 23px;
+border-radius: 200px;
+position: relative;
+left: 71px;
+bottom: 562px;
+transform: rotate(-60deg);
 }
 
 #backpacking-page-dot-route-seven{
-  background: yellow;
-  height: 50px;
-  width: 50px;
-  border-radius: 200px;
-  position: relative;
-  bottom: 432px;
-  left: 198px;
+  background: black;
+    height: 3px;
+    width: 23px;
+    border-radius: 200px;
+    position: relative;
+    bottom: 432px;
+    left: 182px;
+    transform: rotate(-30deg);
 }
 
 #backpacking-page-dot-route-eight{
-  background: yellow;
-  height: 50px;
-  width: 50px;
-  border-radius: 200px;
-  position: relative;
-  bottom: 258px;
-  left: 218px;
-}
+  background: black;
+      height: 3px;
+      width: 23px;
+      border-radius: 200px;
+      position: relative;
+      bottom: 258px;
+      left: 218px;
+      transform: rotate(-2deg);
+  }
 
 #backpacking-page-dot-route-nine{
-  background: yellow;
-  height: 50px;
-  width: 50px;
-  border-radius: 200px;
-  position: relative;
-  left: 152px;
-  bottom: 73px;
+    background: black;
+    height: 3px;
+    width: 23px;
+    border-radius: 200px;
+    position: relative;
+    left: 162px;
+    transform: rotate(27deg);
+    bottom: 73px;
 }
 /*end dots css*/
 
@@ -196,16 +243,42 @@ align-items: flex-end;
   width: 40px;
   /*border: solid blue;*/
   position: relative;
-      bottom: 350px;
-      right: 400px;
+      bottom: 448px;
+      right: 370px;
 }
 .backpacking-page-right-arrow-container{
   height: 40px;
   width: 40px;
   /*border: blue solid;*/
   position: relative;
-      bottom: 350px;
-      right: 140px;
+      bottom: 448px;
+      right: 110px;
+    }
+.backpacking-page-left-arrow-line-one{
+  height: 2px;
+  width: 46px;
+  background: black;
+  transform: rotate(-43deg);
+}
+.backpacking-page-left-arrow-line-two{
+  height: 2px;
+  width: 46px;
+  background: black;
+  margin-top: 28px;
+  transform: rotate(43deg);
+}
+.backpacking-page-right-arrow-line-one{
+  height: 2px;
+  width: 46px;
+  background: black;
+  transform: rotate(43deg);
+}
+.backpacking-page-right-arrow-line-two{
+  height: 2px;
+  width: 46px;
+  background: black;
+  margin-top: 28px;
+  transform: rotate(-43deg);
 }
 #backpacking-page-left-arrow{
 font-size: 120px;
@@ -215,13 +288,123 @@ font-size: 120px;
 }
 /*end arrow css*/
 
-.learn-more-container{
-  font-family: 'Exo 2', sans-serif;
-  font-size: 30px;
-  height: 40px;
-  width: 180px;
-  /*border: red solid;*/
+.learn-more-container {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+    font-size: 70px;
+    height: 40px;
+    width: 376px;
+     /*border: red solid; */
+    position: relative;
+    right: -370px;
+    bottom: 579px;
+    display: table;
+}
+.learn-more-container p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.backpacking-page-dot-routes{
+  -webkit-animation: swing 2s ease-in-out infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+}
+
+
+
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    30%
+    {
+        -webkit-transform: translateY(-8px);
+       transform: translateY(-8px);
+    }
+    50%
+    {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    65%
+    {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+    80%
+    {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    30%
+    {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+    50%
+    {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    65%
+    {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+    80%
+    {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/*letter drop*/
+.letterDrop {
   position: relative;
-    right: 394px;
-    bottom: 303px;
+  /* top: 0.80em;   */
+  display: inline-block;
+   text-transform: uppercase;
+   /*letter-spacing: 0.5em;*/
+     opacity: 0.8;
+     transform: rotateX(-90deg);
+     animation: letterDrop 2.0s ease 1 normal forwards;
+}
+
+@keyframes letterDrop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0.8;
+        top: 3.75em;
+        transform: rotateX(-360deg);
+    }
+    100% {
+        opacity: 1;
+        top: 4.50em;
+        transform: rotateX(360deg);
+    }
 }

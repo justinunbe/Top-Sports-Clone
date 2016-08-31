@@ -3,17 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Top-Sports</title>
-    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
     <link rel="stylesheet" href="Home-Page/reset.css" />
+    <link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="Home-Page/home.css" />
     <link rel="stylesheet" href="Hiking-Page/hiking.css" />
     <link rel="stylesheet" href="Shopping-page/shopping.css" />
     <link rel="stylesheet" href="Camping-Page/camping.css" />
     <link rel="stylesheet" href="BackPacking-Page/backpacking.css" />
+    <link rel="stylesheet" href="Upcoming-Page/coming.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body ng-controller ="mainCtrl">
-    <a ui-sref="home">
+    <div loading-page-directive class="full-background">
+    <div class="container">
+     <div class="ball"></div>
+     <div class="ball"></div>
+     <div class="ball"></div>
+     <div class="ball"></div>
+     <div class="ball"></div>
+     <div class="ball"></div>
+     <div class="ball"></div>
+    </div>
+     </div>
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/menu-scene-2.jpg" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/menu-scene-1.jpg" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/menu-scene-3.jpg" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/menu-scene-4.jpg" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/menu-scene-5.jpg" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/pattern-header-strip.png" />
+
+    <!--preload for cartwheel  -->
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-5/scene-5-8.png" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-1/scene-1-2.png" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-1/scene-1-8.png" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-3/scene-3-7.png" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-3/scene-3-12.png" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-4/scene-4-1.png" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-4/scene-4-8.png" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-4/scene-4-13.png" />
+    <link rel="preload" as="image" href="http://lookbook.quechua.com/spring-summer-2016/assets/img/others/scene-5/scene-5-2.png" />
+
+
+
+
+    <a class=""ui-sref="home">
     <!--holds the ham menu & will be forced in top left or top right  -->
     <div class="home-page-ham-menu">
       <i id="home-page-hame-menu-icon"class="fa fa-bars" aria-hidden="true"></i>
@@ -23,6 +56,7 @@
       <i id="home-page-shopping-cart-icon"class="fa fa-shopping-cart" aria-hidden="true"></i>
     </a>
     <!-- <a href="/#/#route">route</a> -->
+
 <section ui-view>
 
   </section>
@@ -32,12 +66,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
+  <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
   <script src="https://use.fontawesome.com/4b2a38be8f.js"></script>
   <script src="app.js"></script>
   <script src="Home-Page/link-hover-jquery-directive.js"></script>
+  <script src="Home-Page/loading-page-directive.js"></script>
   <script src="Hiking-Page/parallax-directive.js"></script>
   <script src="Hiking-Page/route-directive.js"></script>
+  <script src="sweetalert/dist/sweetalert-dev.js"></script>
   <script src="BackPacking-Page/carousel-directive.js"></script>
   <script src="Backpacking-Page/small-pic-directive.js"></script>
   <script src="Shopping-page/shoppingController.js"></script>

@@ -9,7 +9,14 @@ angular.module("app").directive("routeDirective", function() {
                 e.preventDefault();
                 $('html, body').animate({
                   scrollTop: $("#route").offset().top
-                }, 1500);
+                }, 1600);
+});
+
+$(".hiking-page-camping-container").click(function(e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: $(".coming-soon").offset().top
+  }, 15000);
 });
 
 

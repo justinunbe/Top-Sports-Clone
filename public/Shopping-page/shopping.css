@@ -28,7 +28,7 @@
 }
 .shopping-page-left-side-decoration{
   height: 560px;
-  width: 250px;
+  width: 12%;
   /*border: red solid;*/
   position: absolute;
   left:85px;
@@ -42,7 +42,7 @@
 }
 .shopping-page-left-side-small-decoration{
   height: 440px;
-  width: 307px;
+  width: 120%;
   /*border: green solid;*/
   display: flex;
   justify-content: flex-end;
@@ -65,7 +65,7 @@
 }
 .shopping-page-right-side-decoration{
   height: 520px;
-  width: 250px;
+  width: 12%;
   /*border: red solid;*/
   position: absolute;
   right: 62px;
@@ -75,7 +75,7 @@
 }
 .shopping-page-right-side-small-decoration{
   height: 366px;
-  width: 243px;
+  width: 120%;
   /*border: green solid;*/
   display: flex;
   justify-content: flex-start;

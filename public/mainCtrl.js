@@ -5,7 +5,7 @@ angular.module("app").controller("mainCtrl", function($scope, mainService, $anch
 $scope.buyFlask = function(flaskId) {
   // console.log(flaskId);
   mainService.addToCart(flaskId).then(function (response) {
-    alert('product added!');
+    swal("Added To Cart!", "", "success");
   });
 };
 
@@ -26,8 +26,9 @@ $scope.deleteFromCart = function(productId) {
   // console.log(productId);
   mainService.deleteFromCart(productId)
   .then(function (response) {
-    alert('image removed!');
+    $scope.productPrice();
     $scope.grabAllCartProducts();
+        swal("Removed From Cart!", "", "success");
   });
 };
 
@@ -40,15 +41,34 @@ mainService.allCartProducts()
   });
 };
 
-mainService.allCartProductsPrice().then(function(response) {
-    $scope.productPriceTotal = response;
-    // console.log("new price ",response);
-    $scope.taxPrice = Number((response * 0.047).toFixed(2));
-    var tax = $scope.taxPrice;
-    console.log(response);
-    console.log(tax);
-    $scope.productFinalTotal = (response + tax).toFixed(2);
-});
+mainService.allCartProductsPrice()
+    .then(function(response) {
+      $scope.productPriceTotal = response;
+      $scope.taxPrice = Number((response * 0.047).toFixed(2));
+      var tax = $scope.taxPrice;
+      console.log(response);
+      console.log(tax);
+      $scope.productFinalTotal = (response + tax).toFixed(2);
+  });
+
+$scope.productPrice = function(response) {
+mainService.allCartProductsPrice()
+    .then(function(response) {
+      $scope.productPriceTotal = response;
+      $scope.taxPrice = Number((response * 0.047).toFixed(2));
+      var tax = $scope.taxPrice;
+      console.log(response);
+      console.log(tax);
+      $scope.productFinalTotal = (response + tax).toFixed(2);
+  });
+};
+
+// $scope.productPrice = function(response) {
+//   mainService.allCartProductsPrice().then(function(response){
+//
+// });
+//   });
+
 
 
 $scope.grabAllCartProducts();

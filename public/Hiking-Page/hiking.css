@@ -2,24 +2,6 @@ body {
   height: 100%;
 }
 
-.hiking-page-dark-background{
-  height: 95.5vh;
-  width: 50%;
-  background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/pattern-header-strip.png");
-  margin-top: 45px;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.hiking-page-background-camping-picture{
-  height: 85vh;
-  width: 70%;
-  position: relative;
-  background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/menu-scene-2.jpg");
-  background-position: center;
-  margin-top: 100px;
-  margin-left: -280px;
-}
 .hiking-page-orange-div-down-arrow-container{
   height: 190px;
   width: 90px;
@@ -79,6 +61,8 @@ background-image:url("http://lookbook.quechua.com/spring-summer-2016/assets/img/
 display: flex;
 flex-direction: column;
 align-items: flex-end;
+z-index: 0;
+position: relative;
 }
 .hiking-page-blank-space-filler{
   height: 180px;
@@ -464,4 +448,91 @@ z-index: 1;
   top: 2050px;
   height: 150px;
   position: relative;
+}
+
+.smaller-text-area-box{
+  height: 450px;
+  width: 200%;
+  background-image: url(http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/menu-scene-4.jpg);
+  background-position: center;
+  align-self: flex-end;
+  /*right: 950px;*/
+  /*bottom: 500px;*/
+  position: relative;
+  z-index: 50;
+  bottom: -200px;
+}
+#orange-arrow-div{
+  align-self: flex-start;
+  bottom: -290px;
+  position: relative;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: blue solid;*/
+}
+.coming-soon {
+    color: white;
+     /*border: solid red;*/
+    height: 97px;
+    width: 250px;
+    /* align-self: flex-end; */
+    transform: rotate(90deg);
+    font-size: 19px;
+    position: relative;
+    top: 50px;
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.hiking-page-dark-background{
+  height: 95.5vh;
+  width: 50%;
+  background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/pattern-header-strip.png");
+  margin-top: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hiking-page-background-camping-picture{
+  height: 85vh;
+  width: 70%;
+  position: relative;
+  background-image: url("http://lookbook.quechua.com/spring-summer-2016/assets/img/bgs/menu-scene-2.jpg");
+  background-position: center;
+  margin-top: 100px;
+  margin-left: -280px;
+}
+.panelLeft {
+	animation-duration: 1s;
+	animation-iteration-count: once;
+	animation-name: slidePanelLeft;
+	animation-timing-function: ease-in;
+	/*left: 0px;*/
+}
+.panelRight {
+	animation-duration: 2s;
+	animation-iteration-count: once;
+	animation-name: slidePanelRight;
+	animation-timing-function: ease-in;
+	/*left: 0px;*/
+}
+@keyframes slidePanelLeft {
+ 0% {
+ left: -50%;
+}
+ 100% {
+ left: 0;
+}
+}
+
+@keyframes slidePanelRight {
+ 0% {
+ right: -70%;
+}
+ 100% {
+ right: 0;
+}
 }

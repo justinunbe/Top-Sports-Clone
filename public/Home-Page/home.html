@@ -1,6 +1,8 @@
+
 <!-- start of home page  -->
 <!-- all home page classes, id etc.. will start with home-page  -->
 <!-- holds all of the home page content -->
+
 <div class="home-page-all-encompassing-container">
 
 <!--side bar menu  -->
@@ -35,13 +37,13 @@
   </div>
 </div>
 
-<!--page main content (background image, page content links, ham menu icon)  -->
+<!--page main content (background image, page content links)  -->
 <div class="home-page-main-content-container">
   <!-- 5 divs will hold the links in mid of page (camping,athletics,climbing)  -->
   <div class="home-page-catagory-page-links-container">
 
     <!--each div holds 2 divs inside (one for number one for title)  -->
-    <a class="" ui-sref="hiking">
+    <a class="fade-in onee" ui-sref="hiking">
     <div hiking-Hover-Directive  id="home-page-pic-change-one" class="home-page-individual-link-container">
       <!--inside the number div a paragraph will hold the number place  -->
       <div class="home-page-catagory-number-container">
@@ -54,8 +56,8 @@
     </div>
     </a>
 
-    <a ui-sref="camping">
-    <div id="home-page-pic-change-two" class="home-page-individual-link-container">
+    <a class="fade-in two"ui-sref="camping">
+    <div hiking-Hover-Directive id="home-page-pic-change-two" class="home-page-individual-link-container">
       <div class="home-page-catagory-number-container">
         <p class="home-page-catagory-number">02.</p>
       </div>
@@ -65,6 +67,7 @@
     </div>
     </a>
 
+    <a class="fade-in three" ui-sref="Upcoming">
     <div id="home-page-pic-change-three" class="home-page-individual-link-container">
       <div class="home-page-catagory-number-container">
         <p class="home-page-catagory-number">03.</p>
@@ -73,30 +76,43 @@
           <p class="home-page-tag-link-title"> BACKPACKING</p>
       </div>
     </div>
+    </a>
 
-    <a class="home-page-coming-soon-link" ui-sref="backpacking">
-    <div id="home-page-pic-change-five" class="home-page-individual-link-container">
-      <div class="home-page-catagory-number-container">
-        <p class="home-page-catagory-number">04.</p>
-      </div>
-      <div class="home-page-catagory-title">
-        <p class="home-page-tag-link-title"> COMING SOON</p>
-      </div>
+    <a class="home-page-coming-soon-link fade-in five" ui-sref="shopping">
+    <div id="home-page-pic-change-four" class="home-page-individual-link-container">
+    <div class="home-page-catagory-number-container">
+      <p class="home-page-catagory-number">04.</p>
+    </div>
+    <div class="home-page-catagory-title">
+      <p class="home-page-tag-link-title"> YOUR CART</p>
+    </div>
     </div>
     </a>
 
-      <a class="home-page-coming-soon-link" ui-sref="shopping">
-    <div id="home-page-pic-change-four" class="home-page-individual-link-container">
+    <a class="home-page-coming-soon-link fade-in four" ui-sref="backpacking">
+    <div id="home-page-pic-change-five" class="home-page-individual-link-container">
       <div class="home-page-catagory-number-container">
         <p class="home-page-catagory-number">05.</p>
       </div>
       <div class="home-page-catagory-title">
-        <p class="home-page-tag-link-title"> YOUR CART</p>
+        <p class="home-page-tag-link-title"> UPCOMING</p>
       </div>
     </div>
     </a>
 
 
+
+
     </div>
+<div class="home-page-spring-summer-2016-container fade-in one">
+  <div class="home-page-spring-summer-container">
+    spring / summer
+  </div>
+  <div class="home-page-2016-container">
+    2016
+  </div>
+</div>
+
+
   </div>
 </div>
