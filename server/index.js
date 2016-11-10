@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var massive = require('massive');
-var connectionString = 'postgres://postgres@localhost/topsports';
+var connectionString = "postgres://postgres:tennis123@localhost:5432/topsports";
 
 var app = module.exports = express();
 var massiveInstance = massive.connectSync({
