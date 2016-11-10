@@ -3,7 +3,7 @@ angular.module("app").controller("mainCtrl", function($scope, mainService, $anch
 
 //step 2
 $scope.buyFlask = function(flaskId) {
-  // console.log(flaskId);
+  console.log('mainCtrl', flaskId);
   mainService.addToCart(flaskId).then(function (response) {
     swal("Added To Cart!", "", "success");
   });

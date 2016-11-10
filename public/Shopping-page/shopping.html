@@ -60,7 +60,7 @@
     <div class="shopping-page-cart-price-container">
       {{product.price | currency:"$"}}
     </div>
-    <div ng-click="deleteFromCart(product.id)" class="shopping-page-cart-delete-container">
+    <div ng-click="deleteFromCart(product.cart_id)" class="shopping-page-cart-delete-container">
       <i id="shopping-page-cancel-icon" class="fa fa-trash-o" aria-hidden="true"></i>
     </div>
   </div>

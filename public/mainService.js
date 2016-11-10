@@ -18,7 +18,7 @@ this.allCartProducts = function() {
             url: "/cart"
         })
         .then(function(response) {
-          // console.log(response.data);
+          console.log(response.data);
             return response.data;
         });
 };
@@ -42,7 +42,7 @@ this.allCartProductsPrice = function() {
 
 //step 3
   this.addToCart = function(product) {
-    // console.log(product);
+    console.log('mainService', product);
       return $http({
               method: "POST",
               url: "/cart/" + product

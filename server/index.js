@@ -34,11 +34,12 @@ app.get('/products', function(req, res, next){
 // });
 
 app.get('/cart', function(req, res, next){
-  db.join_cart_and_product(function(err, cart){
-    res.status(200).json(cart);
-    console.log("my cart ",cart);
+  db.join_cart_and_product(function(err, resp){
+    res.status(200).json(resp);
+   console.log("my cart ",resp);
   });
 });
+
 // find particular products
 app.get('/products/name/:name', function(req, res, next){
   db.get_product_by_name(req.params.name, function(err, product){
@@ -51,15 +52,15 @@ app.post('/products', function(req, res, next){
 });
 //add product
 //step 4
-app.post('/cart/:id', cartCtrl.addProduct);
+app.post('/cart/:products_id', cartCtrl.addProduct);
 
 //update product
-app.put('/products/:id', function(req, res, next){
+app.put('/products/:products_id', function(req, res, next){
 
 });
 //delete cart item
-app.delete('/cart/:id', function(req, res, next){
-  db.remove_product_from_cart(req.params.id, function(err, product){
+app.delete('/cart/:cart_id', function(req, res, next){
+  db.remove_product_from_cart(req.params.cart_id, function(err, product){
     if(err){
       // console.log(err);
     res.status(500).send(err);
@@ -69,6 +70,6 @@ app.delete('/cart/:id', function(req, res, next){
   });
 });
 
-app.listen(3000, function() {
+app.listen(80, function() {
   console.log("listening");
 });

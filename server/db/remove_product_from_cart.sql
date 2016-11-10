@@ -1,2 +1,2 @@
 DELETE FROM cart
-WHERE ID = $1;
+WHERE cart_id = $1;
