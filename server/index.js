@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var massive = require('massive');
-var connectionString = "postgres://postgres:tennis123@localhost:5432/topsports";
+var connectionString = process.env.DATABASE_URL || "postgres://postgres:tennis123@localhost:5432/topsports";
 
 var app = module.exports = express();
 var massiveInstance = massive.connectSync({
@@ -69,7 +69,7 @@ app.delete('/cart/:cart_id', function(req, res, next){
     }
   });
 });
-
-app.listen(80, function() {
-  console.log("listening");
+app.set('port', (process.env.PORT || 3000));
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
