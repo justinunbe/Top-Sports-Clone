@@ -5,7 +5,7 @@ var massive = require('massive');
 var connectionString = process.env.DATABASE_URL || "postgres://postgres:tennis123@localhost:5432/topsports";
 
 var app = module.exports = express();
-app.use(express.static((__dirname + '../public')));
+app.use(express.static((__dirname + '/../public')));
 var massiveInstance = massive.connectSync({
   connectionString: connectionString
 });
