@@ -1,4 +1,5 @@
 var express = require('express');
+app.use(express.static(path.join(__dirname, 'public')));
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var massive = require('massive');
