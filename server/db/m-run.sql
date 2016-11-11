@@ -2,12 +2,12 @@
 -- we need to keep this file clean as it will make the transfer to hosting much easier. And it will make endpoints much easier to create if after running a command such as create table we comment out the sql.
 -- also use only single quotes as sql does not like double quotes for some reason
 
-create database topsports;
-\c topsports;
-
-drop table cart CASCADE;
-drop table products CASCADE;
-drop table users CASCADE;
+-- create database topsports;
+-- \c topsports;
+--
+-- drop table cart CASCADE;
+-- drop table products CASCADE;
+-- drop table users CASCADE;
 
 create table users(
 	user_id serial primary key,
