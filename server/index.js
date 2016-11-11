@@ -1,11 +1,11 @@
 var express = require('express');
-app.use(express.static(path.join(__dirname, '../public')));
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var massive = require('massive');
 var connectionString = process.env.DATABASE_URL || "postgres://postgres:tennis123@localhost:5432/topsports";
 
 var app = module.exports = express();
+app.use(express.static(path.join(__dirname, '../public')));
 var massiveInstance = massive.connectSync({
   connectionString: connectionString
 });
